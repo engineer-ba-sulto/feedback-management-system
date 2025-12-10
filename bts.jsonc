@@ -9,13 +9,8 @@
   "orm": "drizzle",
   "backend": "hono",
   "runtime": "workers",
-  "frontend": [
-    "next"
-  ],
-  "addons": [
-    "biome",
-    "turborepo"
-  ],
+  "frontend": ["next"],
+  "addons": ["biome", "turborepo"],
   "examples": [],
   "auth": "better-auth",
   "payments": "none",
