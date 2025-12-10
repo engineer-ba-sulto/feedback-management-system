@@ -1,0 +1,30 @@
+{
+  "name": "@feedback-management-system/db",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.8",
+    "@feedback-management-system/config": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.0",
+    "@libsql/client": "catalog:",
+    "libsql": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  }
+}
